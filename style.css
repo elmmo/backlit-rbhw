@@ -1,3 +1,8 @@
 h2 {
-  background-color: red;
+  font-size: 200px;
+  text-shadow: 0em 0em 30px red; /* x-axis y-axis blur color */
+}
+
+body {
+  background-color: white;
 }
