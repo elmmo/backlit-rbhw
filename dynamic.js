@@ -41,5 +41,5 @@ function colorTransition() {
       return "0em 0em 30px " + color;
     }
   })
-  window.setTimeout(newColor, 1000)
+  window.setTimeout(newColor, 500)
 };

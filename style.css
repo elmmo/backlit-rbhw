@@ -1,6 +1,7 @@
-h2 {
+.helloWorld {
   font-size: 200px;
   text-shadow: 0em 0em 30px #ff0000; /* x-axis y-axis blur color */
+  font-family: "Montserrat";
 }
 
 body {
