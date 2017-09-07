@@ -1,47 +1,45 @@
 var color = "#ff0000";
 
-function main() {
-  //while (true) { commented to avoid a forever loop before ready
-    newColor();
-    // change backlit glow to Hello World
-  //}
-}
-
 function newColor() {
   // generate the next color in the rainbow
-  console.log("color start = " + color);
   switch (color) {
-    case "#ff0000":
+    case "#ff0000": // red
       color = "#ff8000";
       break;
-    case "#ff8000":
+    case "#ff8000": // orange
       color = "#ffff00";
       break;
-    case "#ffff00":
+    case "#ffff00": // yellow
       color = "#00ff00";
       break;
-    case "#00ff00":
+    case "#00ff00": // green
       color = "#00ffff";
       break;
-    case "#00ffff":
+    case "#00ffff": // blue
       color = "#0000ff";
       break;
-    case "#0000ff":
+    case "#0000ff": // indigo
       color = "#8000ff";
       break;
-    case "#8000ff":
+    case "#8000ff": // violet
       color = "#ff00ff";
       break;
-    case "#ff00ff":
+    case "#ff00ff": // red
       color = "#ff0000";
       break;
     default:
       console.log("Rainbow Generation Error");
   }
-  console.log(color);
+  colorTransition();
 }
 
 //// TweenMax functions
 function colorTransition() {
-  // TweenMax functionality
-}
+  TweenMax.to(".helloWorld", 1, {
+    ease: Linear.easeNone,
+    textShadow: function() {
+      return "0em 0em 30px " + color;
+    }
+  })
+  window.setTimeout(newColor, 1000)
+};

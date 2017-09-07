@@ -1,6 +1,6 @@
 h2 {
   font-size: 200px;
-  text-shadow: 0em 0em 30px red; /* x-axis y-axis blur color */
+  text-shadow: 0em 0em 30px #ff0000; /* x-axis y-axis blur color */
 }
 
 body {
