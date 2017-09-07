@@ -9,6 +9,7 @@ function main() {
 
 function newColor() {
   // generate the next color in the rainbow
+  console.log("color start = " + color);
   switch (color) {
     case "#ff0000":
       color = "#ff8000";
@@ -22,11 +23,11 @@ function newColor() {
     case "#00ff00":
       color = "#00ffff";
       break;
-    case "00ffff":
-      color = "0000ff";
+    case "#00ffff":
+      color = "#0000ff";
       break;
-    case "0000ff":
-      color = "8000ff";
+    case "#0000ff":
+      color = "#8000ff";
       break;
     case "#8000ff":
       color = "#ff00ff";
@@ -36,8 +37,8 @@ function newColor() {
       break;
     default:
       console.log("Rainbow Generation Error");
-  console.log(color);
   }
+  console.log(color);
 }
 
 //// TweenMax functions
