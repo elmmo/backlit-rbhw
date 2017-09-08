@@ -34,6 +34,21 @@ function newColor() {
 }
 
 //// TweenMax functions
+var tl = new TimelineLite();
+
+tl.add("elevatorDoors")
+  .to(".right", 4, {
+    x: "+=900",
+    background: "linear-gradient(-90deg, rgb(33, 32, 32), rgb(64, 64, 64)),\n" +
+                "linear-gradient(90deg, rgb(78, 75, 75), rgb(64, 64, 64))"
+  }, "elevatorDoors")
+  .to(".left", 4, {
+    x: "-=900",
+    background: "linear-gradient(90deg, rgb(33, 32, 32), rgb(64, 64, 64)),\n" +
+                "linear-gradient(-90deg, rgb(78, 75, 75), rgb(64, 64, 64))"
+   }, "elevatorDoors")
+  .add(colorTransition, .2);
+
 function colorTransition() {
   TweenMax.to(".helloWorld", 1.5, {
     ease: Linear.easeNone,
