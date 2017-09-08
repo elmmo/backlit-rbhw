@@ -35,11 +35,19 @@ function newColor() {
 
 //// TweenMax functions
 function colorTransition() {
-  TweenMax.to(".helloWorld", 1, {
+  TweenMax.to(".helloWorld", 1.5, {
     ease: Linear.easeNone,
     textShadow: function() {
-      return "0em 0em 30px " + color;
+      var shadow = "0em 0em 20px white,\n" +
+                   "0em 0em 40px white,\n" +
+                   "0em 0em 40px white,\n" +
+                   "0em 0em 20px white,\n" +
+                   "0em 0em 60px " + color + ",\n" +
+                   "0em 0em 80px " + color + ",\n" +
+                   "0em 0em 60px " + color + ",\n" +
+                   "0em 0em 60px " + color;
+      return shadow;
     }
   })
-  window.setTimeout(newColor, 500)
+  window.setTimeout(newColor, 750)
 };
