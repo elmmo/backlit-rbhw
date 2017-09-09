@@ -1,4 +1,5 @@
-var color = "#ff0000";
+var colorArray = ["#ff0000", "#ff8000", "#ffff00", "#00ff00", "#00ffff", "#0000ff", "#8000ff", "#ff00ff"];
+var color = colorArray[Math.floor(Math.random() * 8)];
 
 function newColor() {
   // generate the next color in the rainbow
@@ -36,7 +37,8 @@ function newColor() {
 //// TweenMax functions
 var tl = new TimelineLite();
 
-tl.add("elevatorDoors")
+tl.add(colorTransition)
+  .add("elevatorDoors", "+=.1")
   .to(".right", 4, {
     x: "+=900",
     background: "linear-gradient(-90deg, rgb(33, 32, 32), rgb(64, 64, 64)),\n" +
@@ -46,8 +48,7 @@ tl.add("elevatorDoors")
     x: "-=900",
     background: "linear-gradient(90deg, rgb(33, 32, 32), rgb(64, 64, 64)),\n" +
                 "linear-gradient(-90deg, rgb(78, 75, 75), rgb(64, 64, 64))"
-   }, "elevatorDoors")
-  .add(colorTransition, .2);
+   }, "elevatorDoors");
 
 function colorTransition() {
   TweenMax.to(".helloWorld", 1.5, {

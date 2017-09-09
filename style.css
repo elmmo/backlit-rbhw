@@ -1,14 +1,5 @@
 .helloWorld {
   font-size: 12em;
-  text-shadow:
-               0em 0em 20px white,
-               0em 0em 40px white,
-               0em 0em 40px white,
-               0em 0em 20px white,
-               0em 0em 60px #ff0000,
-               0em 0em 80px #ff0000,
-               0em 0em 60px #ff0000,
-               0em 0em 60px #ff0000; /* x-axis y-axis blur color */
   font-family: "Montserrat";
   text-align: center;
   color: rgb(131, 126, 126);
