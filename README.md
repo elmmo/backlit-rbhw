@@ -1,8 +1,6 @@
 # gradient-rbhw
 A Really Beautiful Hello World program with a gradient background that's based off of Microsoft's Studio 6, the sixth floor of City Center Plaza
-in Bellevue, Washington. You can see the original below or <strong><a href="https://media.giphy.com/media/viNyMmcUYZ2O4/giphy.gif">here</a></strong>.
-
-<img src="https://media.giphy.com/media/viNyMmcUYZ2O4/giphy.gif"/>
+in Bellevue, Washington. You can see the original <strong><a href="https://media.giphy.com/media/viNyMmcUYZ2O4/giphy.gif">here</a></strong>.
 
 ### About Really Beautiful Hello World
 RBHW is an ongoing series of projects that was inspired by a conversation I had with my mentor at Microsoft. 
